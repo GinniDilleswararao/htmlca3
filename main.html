@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/favicon.webp">
+    <title>event management</title>
+
+    <style>
+        #div1{
+             background: url(../images/pexels-danielnouri-8448552.jpg) no-repeat center center/cover;
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            
+        }
+        #div2{
+            display: flex;
+            justify-content: space-evenly;
+            padding: 15px;
+            background-color: rgba(0, 0, 0, 0.5);
+            position: sticky;
+
+        }
+        #div2{
+             display: flex;
+            align-items: center;
+              
+        }
+        #div3{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+              text-align: center;
+            font-size: 24px;
+            color: beige;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        #div3 img{
+            border-radius: 25%;
+             height: 50px;
+            margin-right: 10px;
+            
+        }
+        
+        #div4{
+            a{
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: bold;
+           
+            }
+        }
+        #div5{
+            
+            text-align: center;
+            margin-top: 100px;
+
+            h1{
+                font-size: 48px;
+            margin-bottom: 20px;
+            color: white;
+              }
+
+            span{
+                color: #00b1ff;
+            }
+            p{
+                  font-size: 20px;
+            margin-bottom: 30px;
+            color: white;
+            }
+
+            
+            }
+            #div6{
+                    display: flex;
+                   justify-content: center;
+                  align-items: center;
+                  gap: 10px;
+            }
+            #div6 input{
+                padding: 10px;
+                width: 300px;
+                border: none;
+                border-radius: 5px;
+            }
+            #div6 button{
+                background-color: white;
+                border: none;
+                padding: 10px;
+                border-radius: 5px;
+                
+            }
+            #div6 button img {
+            width: 20px;
+            height: 20px;
+           }
+            #div6 select {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+         #div7{
+            margin-top: 50px;
+            text-align: center;
+            padding: 20px;
+            color: aliceblue;
+        }
+          #div7 a{
+             color: #00b1ff;
+            text-decoration: none;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+                body {
+            font-family: Arial, sans-serif;
+        }
+
+        #div8{
+            display: flex;
+            align-items: center;
+            margin: 20px;
+            margin-left: 200px;
+        }
+
+        #div9{
+            width: 50px;
+            height: 50px;
+            border-radius: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 0px;
+        }
+
+        #div9 img {
+            width: 40px;
+            height: 40px;
+            align-items: end;
+        }
+
+        b{
+            font-size: 24px;
+            margin: 0px;
+        }
+
+        p{
+            font-size: 14px;
+            color: gray;
+            margin: 5px;
+
+        }
+        #div11{
+            max-width: 100%;
+            gap: 20px;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            border-radius: 10px;}
+
+                #div12{
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #div13 {
+            background: #fff;
+            width: 280px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #div14 {
+            position: relative;
+        }
+
+        #div14 img {
+            width: 100%;
+            height: auto;
+        }
+
+        #span1 {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #00aaff;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        #div15 {
+            padding: 15px;
+        }
+
+        #div15 h3 {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        #div15 p {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        #div16 {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        #div16 img {
+            width: 18px;
+            margin-right: 6px;
+        }
+
+        #div17 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        #div17 .div16 {
+            color: #00796b;
+            font-weight: bold;
+        }
+
+        .buy-btn {
+            background-color: #00796b;
+            color: #fff;
+            padding: 6px 12px;
+            border-radius: 5px;
+            font-size: 12px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .buy-btn:hover {
+            background-color: #005a4f;}
+            #div18{
+                align-items: center;
+                justify-content: center;
+                display: flex;
+        
+            }
+         .banner {
+            background: linear-gradient(135deg, #1a76d2, #00aaff);
+            color: #fff;
+            padding: 50px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 80%;
+            max-width: 1200px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .banner-content {
+            max-width: 60%;
+        }
+
+        .banner-content h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .banner-content p {
+            font-size: 18px;
+            color: #d0e4f7;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            padding: 12px 24px;
+            background-color: #fff;
+            color: #1a76d2;
+            border-radius: 5px;
+            font-size: 16px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .additional-info {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #d0e4f7;
+        }
+
+        .profile {
+            position: relative;
+            max-width: 40%;
+            text-align: center;
+        }
+
+        .profile img {
+            max-width: 100%;
+            border-radius: 50%;
+        }
+
+        .profile-card {
+            background: #fff;
+            color: #333;
+            padding: 10px 15px;
+            border-radius: 8px;
+            position: absolute;
+            top: 10%;
+            left: -10%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+        }
+
+        .profile-card img {
+            width: 20px;
+            margin-right: 8px;
+        }
+
+        .profile-card span {
+            font-weight: bold;
+            margin-right: 4px;
+        }
+
+        .decorative-circle {
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+        }
+
+        .circle-1 {
+            width: 60px;
+            height: 60px;
+            top: 20%;
+            right: 15%;
+        }
+
+        .circle-2 {
+            width: 40px;
+            height: 40px;
+            bottom: 30%;
+            right: 10%;
+        }
+
+        .circle-3 {
+            width: 20px;
+            height: 20px;
+            bottom: 40%;
+            left: 10%;
+        }
+
+        
+        
+        
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <div id="div2">
+            <div id="div3">
+                <a href="main.html">
+        <img src="../images/favicon.webp"></a>
+       All Events in lpu
+            </div>
+            <div id="div4">
+                <a href="#">+ create event</a>&nbsp;
+                <a href="signin.html">sign in</a>
+            </div>
+        </div>
+    
+     <div id="div5">
+        <h1><Span>LIVE.</Span>Don't Just Exist.</h1>
+        <p>Discover The Most Happening Events Around You</p>
+     <div id="div6">
+        <input type="text" placeholder="Search Events, Categories, Location...">
+        <button><img src="../images/search-512.webp"alt="Search Icon"></button>
+        <select>
+            <option>shanti devi auditorium</option>
+            <option>baldev raj mittal</option>
+            <option>unipolis </option>
+        </select>
+     </div>
+     <div id="div7">
+        LEARN TO CREATE AN <span>EVENT</span>
+        <a href="#">Watch Video</a>
+      </div>
+     </div>
+    </div>
+    <br>
+    <br>
+    <div id="div8">
+<div id="div9">
+<img src="../images/Turn Right.png" width="50px">&nbsp</div>
+<div id="div10"><b>FIND NEW EXPERIENCES</b>
+<p>DISCOVER,EXPLORE,MAKE A PLAN</p></div></div>
+<div id="div11">
+    <div class="card theatre">
+    <a href="theatrecard.html"><img src="../images/art and theater.webp" alt="Theatre and Art"></a>
+    </div>
+    <div class="card pocket">
+    <a href="pocketfriendly.html"><img src="../images/pocketfriendly.webp" alt="Pocket Friendly"></a>
+    </div>
+    <div class="card workshops">
+    <a href="workshops.html"><img src="../images/workshops.png" alt="Workshops"></a>
+    </div>
+    <div class="card music">
+    <a href="music.html"><img src="../images/music.png" alt="Music"></a>
+    </div>
+    </div>
+    <div id="div8">
+        <div id="div9">
+            <img src="../images/bookmark_15600741.png" width="50px">&nbsp
+        </div>
+        <div id="div10"><b>Featured events</b>
+        </div>
+    </div>
+
+        <div id="div12">
+            <div id="div13">
+                <div id="div14">
+                    <img src="../images/spidy.webp" alt="Hyderabad Comic Con 2024">
+                    <span id="span1">FESTIVAL</span>
+                </div>
+                <div id="div15">
+                    <h3>Hyderabad Comic Con 2024</h3>
+                    <div id="div16">
+                        <img src="../images/calendar_2886665.png" alt="Date"> November 15 - 17 | 10AM - 8PM
+                    </div>
+                    <div id="div16">
+                        <img src="../images/gps_15949717.png" alt="Location"> HITEX Exhibition Center, Hyderabad
+                    </div>
+                    <div id="div17">
+                        <span class="price">₹899 ONWARDS</span>
+                        <a href="#" class="buy-btn">BUY NOW</a>
+                    </div>
+                </div>
+            </div>
+        
+        
+            <div id="div13">
+                <div id="div14">
+                    <img src="../images/2ndmrvl.jpg" alt="DreamHack X Hyderabad Comic Con 2024">
+                    <span id="span1">GAMING AND ENTERTAINMENT</span>
+                </div>
+                <div id="div15">
+                    <h3>DreamHack X Hyderabad Comic Con 2024</h3>
+                    <div id="div16">
+                        <img src="../images/calendar_2886665.png" alt="Date"> November 15 - 17 | 11AM Onwards
+                    </div>
+                    <div id="div16">
+                        <img src="../images/gps_15949717.png" alt="Location"> HITEX Exhibition Center, Hyderabad
+                    </div>
+                    <div id="div17">
+                        <span class="price">₹899 ONWARDS</span>
+                        <a href="#" class="buy-btn">BUY NOW</a>
+                    </div>
+                </div>
+            </div>
+        
+            
+            <div id="div13">
+                <div id="div14">
+                    <img src="../images/3rdpic.jpg" alt="Bryan Adams Tour 2024">
+                    <span id="span1">MUSIC</span>
+                </div>
+                <div id="div15">
+                    <h3>Bryan Adams - So Happy It Hurts Tour 2024</h3>
+                    <div id="div16">
+                        <img src="../images/calendar_2886665.png" alt="Date"> December 16 | 7PM
+                    </div>
+                    <div id="div16">
+                        <img src="../images/gps_15949717.png" alt="Location"> GMR Arena, Hyderabad
+                    </div>
+                    <div id="div17">
+                        <span class="price">₹2499 ONWARDS</span>
+                        <a href="#" class="buy-btn">BUY NOW</a>
+                    </div>
+                </div>
+            </div>
+        
+        
+            <div id="div13">
+                <div id="div14">
+                    <img src="../images/4thimg.jpg" alt="Arijit Singh India Tour 2024">
+                    <span id="span1">MUSIC</span>
+                </div>
+                <div id="div15">
+                    <h3>Arijit Singh India Tour 2024 | Hyderabad</h3>
+                    <div id="div16">
+                        <img src="../images/calendar_2886665.png" alt="Date"> December 7 | 5PM onwards
+                    </div>
+                    <div id="div16">
+                        <img src="../images/gps_15949717.png" alt="Location"> GMR Arena, Hyderabad
+                    </div>
+                    <div id="div17">
+                        <span class="price">₹5000 ONWARDS</span>
+                        <a href="#" class="buy-btn">BUY NOW</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="div18">
+                <div class="banner">
+                    <div class="banner-content">
+                        <h1>Do you host events?</h1>
+                        <p>Let's make the world #Happening together</p>
+                        <a href="#" class="button">Create an Event</a>
+                        <div class="additional-info">Create • Promote • Sell</div>
+                    </div>
+                    <div class="profile">
+                        <img src="../images/host.png" alt="Event Host">
+                        <div class="profile-card">
+                            <img src="../images/instagram-icon_1057-2227.avif" alt="Instagram Icon">
+                            <span>@Stroymoyd</span> Comedian, San Francisco
+                        </div>
+                    </div>
+                    <div class="decorative-circle circle-1"></div>
+                    <div class="decorative-circle circle-2"></div>
+                    <div class="decorative-circle circle-3"></div>
+                </div>
+                </div>
+                <div>
+                    <div
+                        style="display: flex; align-items: center; justify-content: space-between; padding: 40px; font-family: Arial, sans-serif;">
+                        <!-- Left Side: Phone Mockups -->
+                        <div style="display: flex; gap: 20px;">
+                            <img src="../images/Untitled design (1).png" alt="Phone mockup 2" style="width: 180px; border-radius: 20px;">
+                            <img src="../images/Untitled design (1).png" alt="Phone mockup 2" style="width: 180px; border-radius: 20px;">
+                        </div>
+                    
+                        <!-- Right Side: Text and App Links -->
+                        <div style="max-width: 400px; text-align: left;">
+                            <h2 style="font-size: 32px; margin-bottom: 15px;">Discover Events.<br>Anywhere, Anytime.</h2>
+                            <p style="font-size: 16px; margin-bottom: 20px;">Download the AllEvents app to never miss out on the best events
+                                near you!</p>
+                    
+                            <!-- QR Code and App Links -->
+                            <div style="display: flex; align-items: center; gap: 15px;">
+                                <div style="display: flex; flex-direction: column; gap: 10px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+        
+<div
+    style="background-color: #1a1e2b; color: #ffffff; padding: 20px; text-align: center; font-family: Arial, sans-serif;">
+    <div style="margin-bottom: 20px;">
+        <h2 style="font-size: 24px; margin-bottom: 10px;">All Events in LPU</h2>
+        <p style="font-size: 16px; margin: 0;">All events in lpu is a platform that helps you discover and buy the best in
+            events,  in our city. We strive to curate experiences that are worth your time and money,
+            possibly something you have never tried before.</p>
+    </div>
+    <div style="margin-bottom: 20px;">
+        <h3 style="font-size: 18px; margin-bottom: 10px;">FOR EVENT ORGANIZERS</h3>
+        <p style="font-size: 14px; margin: 0;">the web is built by the same team that created Bacardi NH7 Weekender
+            (us) and we sure know what goes into putting together a great experience. Our technology, marketing and
+            customer support can help you build a community of not just ticket buyers, but also fans.</p>
+    </div>
+    <div style="margin-bottom: 20px;">
+        <a href="#" style="color: #ffffff; margin-right: 15px; text-decoration: none;">ABOUT US</a>
+        <a href="#" style="color: #ffffff; margin-right: 15px; text-decoration: none;">WORK WITH US</a>
+        <a href="#" style="color: #ffffff; margin-right: 15px; text-decoration: none;">PRIVACY POLICY</a>
+        <a href="#" style="color: #ffffff; margin-right: 15px; text-decoration: none;">TERMS & CONDITIONS</a>
+        <a href="#" style="color: #ffffff; margin-right: 15px; text-decoration: none;">LIST WITH US</a>
+        <a href="#" style="color: #ffffff; margin-right: 15px; text-decoration: none;">CONTACT US</a>
+        <a href="#" style="color: #ffffff; text-decoration: none;">FAQs</a>
+    </div>
+    <div>
+        <span style="font-size: 14px; margin-right: 10px;">Find us on:</span>
+        <a href="#" style="color: #ffffff; margin-right: 10px;"><img src="../images/faceboo2k.png" alt="Facebook"
+                style="width: 20px;"></a>
+        <a href="#" style="color: #ffffff; margin-right: 10px;"><img src="../images/instagram-icon_1057-2227.avif" alt="Instagram"
+                style="width: 20px;"></a>
+        <a href="#" style="color: #ffffff;"><img src="../images/twitter.avif" alt="Twitter" style="width: 20px;"></a>
+    </div>
+</div>
+
+
+    
+    
+</body>
+</html>
